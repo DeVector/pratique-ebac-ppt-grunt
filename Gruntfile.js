@@ -50,6 +50,28 @@ module.exports = function (grunt) {
                     }
                 ]
             },
+            dist: {
+                options: {
+                    patterns: [
+                        {
+                            match: "ENDERECO_CSS",
+                            replacement: './styles/main.min.css'
+                        },
+                        {
+                            match: "ENDERECO_JS",
+                            replacement: './scripts/main.min.js'
+                        }
+                    ]
+                },
+                files: [
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: ['src/index.html'],
+                        dest: 'dist/'
+                    }
+                ]
+            }
         },
         uglify: {
             target: {
