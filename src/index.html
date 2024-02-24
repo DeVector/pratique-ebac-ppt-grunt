@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedra, Papel ou Tesoura</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="@@ENDERECO_CSS">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Pedra, Papel ou Tesoura</h1>
+            <ul class="list-escolha">
+                <li class="list-escolha-item">Pedra - 1</li>
+                <li class="list-escolha-item">Papel - 2</li>
+                <li class="list-escolha-item">Tesoura - 3</li>
+            </ul>
+            <form id="form-jogo">
+                <div>
+                    <label for="escolha">Escolha uma opção</label>
+                    <input type="number" id="escolha" value="1" min="1" max="3">
+                </div>
+                <button type="submit">Jogar</button>
+            </form>
+            <div id="escolha-computador">
+                O computador escolheu: <span id="resultado-computador"></span>
+            </div>
+            <div id="resultado-jogo">
+                O número sorteado foi: <span id="ganhador"></span>
+            </div>
+        </div>
+    </main>
+    <script src="@@ENDERECO_JS"></script>
+</body>
+</html>
